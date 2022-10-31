@@ -6,11 +6,8 @@ import { expect } from "chai";
 
 describe("Date conversion", () => {
   it("String -> PlainDate", () => {
-    expect(
-      Temporal.PlainDate.from("2000-12-31").equals(
-        new Temporal.PlainDate(2000, 12, 31)
-      )
-    ).to.be.true;
+    expect(Temporal.PlainDate.from("2000-12-31"))
+    .to.eql(new Temporal.PlainDate(2000, 12, 31));
   });
 
   it("Date -> Instant", () => {
