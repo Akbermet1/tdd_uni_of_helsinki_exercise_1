@@ -3,7 +3,7 @@ export class InMemoryDatabase {
   holidays = [];
 
   withTestData() {
-    // this.setBasePrice("1jour", 35);
+    this.setBasePrice("1jour", 35);
     this.setBasePrice("night", 19);
     this.addHoliday("2019-02-18", "winter");
     this.addHoliday("2019-02-25", "winter");
